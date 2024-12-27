@@ -1,0 +1,426 @@
+
+html,body {
+    width: 100%;
+    height: 100%;
+     background-color: rgb(76, 95, 76);
+}
+
+
+header {
+
+    display: flex;
+    justify-content: center;
+
+    font-family: monospace, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: white;
+
+    padding: 10px 20px;
+    width: 100%;
+
+    background-color: rgb(76, 95, 76);
+}
+
+footer {
+
+    display: flex;
+    justify-content: center;
+
+    font-family: monospace, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: white;
+
+    padding: 30px 20px; 
+    width: 100%;
+
+    background-color: rgb(76, 95, 76);
+    
+}
+
+
+
+
+/* FULL PAGE ALL CONTENT */
+.container {
+    display: flex;
+    flex-direction: row;
+
+    padding: 10px 10px 10px 10px; 
+    background-color: rgb(243, 236, 226);
+
+}
+
+
+.container > .navbar2 {
+    display: none;
+    background-color: red;
+}
+
+/* END OF PAGE */
+
+
+/* PHOTO */
+.container > .photo {
+
+    
+    width: 50vh;
+    height: auto;
+
+}
+/* END OF PHOTO */
+
+
+/* RIGHT SIDE */
+.container2 {
+    display: flex;
+    flex-direction: column;
+
+
+    padding: 0px 10px 0px 0px; 
+    width: 100%;
+    height: 100%;
+
+    text-wrap: wrap;
+
+
+    background-color: rgb(243, 236, 226);
+
+}
+
+.container2 > div {
+    
+    margin: 0px 0px 0px 0px;
+  
+}
+
+/* END OF RIGHT SIDE */
+
+
+
+/* NAVIGATION BAR */
+
+.container2 > .navbar {
+
+
+
+    font-family: monospace, 'Times New Roman', Times, serif;
+    font-size: 20px;
+
+    height: fit-content;
+    margin: 0px 0px 10px 20px;
+
+    
+    background-color: white;
+
+}
+
+.container2 > .navbar > ul {
+    
+    display: flex;
+    justify-content: center;
+
+    padding: 0px;
+    
+
+    list-style-type: none;
+    
+}
+
+.container2 > .navbar > ul > li {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding:10px;
+    margin: 0px 0px 0px 0px;
+    height: 12px;
+}
+
+.container2 > .navbar > ul > li > a {
+    
+
+    margin: 10px;
+    height: fit-content;
+
+}
+
+
+.container2 > .navbar > ul > li > a:link { 
+    color: black;
+}
+
+.container2 > .navbar > ul > li > a:visited { 
+    color: purple;
+}
+
+.container2 > .navbar > ul > li:hover {
+    
+    background-color: rgb(76, 95, 76);
+    font-size: 25px;
+    color: white;
+
+}
+
+.container2 > .navbar > ul > li > a:hover {
+
+    color: white;
+    
+
+}
+
+.container2 > .navbar > ul > li > a:active { 
+    color: blue;
+}
+
+
+
+
+
+
+
+/* END OF NAVIGATION BAR */
+
+
+
+/* MAIN BODY CONTENT */
+
+
+.container2 {
+    display: flex;
+    flex:1;
+    width: fit-content;
+    height: fit-content;
+}
+
+.container2 > .main-content {
+
+
+    
+
+    font-family: monospace, 'Times New Roman', Times, serif;
+    font-size: 20px;
+
+    position: relative;
+    padding: 10px;
+    margin: 20px 0px 20px 20px;
+
+    background-color: white;
+}
+
+
+.container2 > .main-content > h2,h3,p {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: monospace, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-wrap: wrap;
+
+
+    width: 700px;
+    height: 100px;
+    
+    margin: 10px;
+
+    background-color: rgb(243, 236, 226);
+}
+
+/* END OF MAIN BODY CONTENT */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile Responsive */
+
+@media screen and (max-width: 1210px) {
+
+    html,body {
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+
+        padding: 30px 0px 0px 0px;
+        margin: auto;
+        width: auto;
+        min-height: 100vh;
+
+
+         background-color: rgb(76, 95, 76);
+    }
+
+    header {
+
+        font-family: monospace, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        color: white;
+    
+        position: absolute;
+        top:0;
+        width: 100%;
+    
+        background-color: rgb(76, 95, 76);
+    }
+    
+    footer {
+    
+
+    
+        font-family: monospace, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        color: white;
+    
+
+        width: 100%;
+    
+        background-color: rgb(76, 95, 76);
+        
+    }
+
+
+    .container {
+        display: inline;
+        padding: 10px 0px 0px 15px; 
+        background-color: rgb(243, 236, 226);
+    
+    }
+
+    /* PHOTO */
+    .container > .photo {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        object-fit: cover;
+
+
+        height: 500px;
+        width: 400px;
+        padding: 0px;
+        margin: 20px 0px 0px 150px;
+
+
+    }
+    /* END OF PHOTO */
+
+
+
+    .container > .navbar2 {
+
+
+        display: flex;
+        justify-content: center;
+
+        font-family: monospace, 'Times New Roman', Times, serif;
+        font-size: 20px;
+    
+        height: auto;
+        margin: 0px 15px 0px 0px;
+
+        background-color: white;
+    
+    }
+    
+    .container > .navbar2 > ul {
+        
+        display: flex;
+        justify-content: center;
+    
+        padding: 0px;
+        
+    
+        list-style-type: none;
+        
+    }
+    
+    .container > .navbar2 > ul > li {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        padding:10px;
+        margin: 0px 0px 0px 30px;
+        height: 12px;
+    }
+    
+    .container > .navbar2 > ul > li > a {
+        
+    
+        margin: 10px;
+        height: auto;
+    
+    }
+    
+    
+    .container > .navbar2 > ul > li > a:link { 
+        color: black;
+    }
+    
+    .container > .navbar2 > ul > li > a:visited { 
+        color: purple;
+    }
+    
+    .container > .navbar2 > ul > li:hover {
+        
+        background-color: rgb(76, 95, 76);
+        font-size: 25px;
+        color: white;
+    
+    }
+    
+    .container > .navbar2 > ul > li > a:hover {
+    
+        color: white;
+        
+    
+    }
+    
+    .container > .navbar2 > ul > li > a:active { 
+        color: blue;
+    }
+    
+    .container2 > .navbar {
+        display: none;
+        background-color: red;
+    }
+
+
+    .container2 {
+        display: flex;
+        flex:1;
+        width: fit-content;
+        height: fit-content;
+    }
+
+.container2 > .main-content {
+
+    font-family: monospace, 'Times New Roman', Times, serif;
+    font-size: 20px;
+
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 20px 0px 20px 0px;
+
+    background-color: white;
+}
+
+}
+
+/* End of Mobile Responsive */
