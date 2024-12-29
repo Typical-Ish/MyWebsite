@@ -6,7 +6,7 @@ html{
 
     padding: 10px;
     margin: 10px;
-    background-color: rgb(164, 172, 164);
+    background-color: rgb(68, 69, 78);
 }
 
 
@@ -38,7 +38,7 @@ body {
     flex: 1;
 
     margin: 0em;
-    width: 22em;
+    width: 22.7em;
     height: 10em;
 
     border-top-left-radius: 4em;
@@ -62,7 +62,7 @@ body {
     flex: 1;
 
     margin: 0em;
-    width: 22em;
+    width: 22.7em;
     height: 10em;
 
     background-color: gainsboro;
@@ -76,14 +76,22 @@ body {
 
 .box-container > h1 {
 
-    margin: 0;
+    position: absolute; /* Positioning relative to the .gradient-container */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust to truly center */
+    color: white; /* Ensure text contrasts against the gradient */
+    text-align: center;
+    z-index: 2; /* Ensure the text appears above the gradient */
 
+    width: 100%;
+    margin-top: 1.5em;
 
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 2.5em;
     font-weight: 200;
     font-stretch: expanded;
-    color: darkgreen;
+    
     
 }
 
@@ -116,6 +124,7 @@ body {
 .box1 {
 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
@@ -135,8 +144,21 @@ body {
     
 
     font-stretch: expanded;
-    color: darkgreen;
+    color: black;
 }
+
+
+.box1 > h1 {
+
+    font-size: 20px;
+}
+
+.box1 > h2 {
+
+    font-size: 20px;
+    margin: 10px;
+}
+
 
 .box2 {
 
@@ -158,7 +180,18 @@ body {
     text-align: center;
 
     font-stretch: expanded;
-    color: darkgreen;
+    color: black;
+}
+
+.box2 > h1 {
+
+    font-size: 40px;
+}
+
+.box2 > h2 {
+
+    font-size: 20px;
+    margin: 10px;
 }
 
 .box3 {
@@ -182,10 +215,138 @@ body {
     text-align: center;
 
     font-stretch: expanded;
-    color: darkgreen;
+    color: black;
+}
+
+.box3 > h1 {
+
+    font-size: 20px;
+}
+
+.box3 > h2 {
+
+    font-size: 20px;
+    margin: 10px;
 }
 
 
 
+.box-container3 {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+
+    position: sticky;
+    bottom: 0;
 
 
+    width: 95%;
+    height: 30px;
+    margin: 10px;
+    padding: 10px;
+
+    border-radius: 10px;
+
+    background-color: white;
+}
+
+.box-container3 > ul {
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    overflow: hidden;
+
+    list-style: none;
+    
+
+}
+
+.box-container3 > ul > li{
+
+    display: flex;
+    flex-direction: row;
+
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 200;
+
+    text-decoration: none;
+
+    margin: 10px;  
+    
+
+}
+
+.box-container3 > ul > li:first-child{
+
+    display: flex;
+    flex-direction: row;
+
+    margin-left: -5px;  
+    
+
+}
+
+.box-container3 > ul > li:hover{
+
+    display: flex;
+    flex-direction: row;
+
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 200;
+
+    margin: 10px;  
+
+    background-color:  rgb(164, 172, 164);
+    
+
+}
+
+.box-container3 > ul > li > a {
+
+    display: flex;
+    flex-direction: row;
+
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 200;
+
+    text-decoration: none;
+    color: black;
+
+    margin: 10px;  
+
+}
+
+.box-container3 > ul > li > a:visited {
+
+    display: flex;
+    flex-direction: row;
+
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 200;
+
+    text-decoration: none;
+    color: darkblue;
+
+    margin: 10px;  
+
+}
+
+
+footer {
+
+    font-family: monospace;
+    font-size: 12px;
+    font-weight: 200;
+
+    color: white;
+}
