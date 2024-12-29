@@ -1,426 +1,191 @@
 
-html,body {
-    width: 100%;
-    height: 100%;
-     background-color: rgb(76, 95, 76);
-}
-
-
-header {
+html{
 
     display: flex;
     justify-content: center;
 
-    font-family: monospace, 'Times New Roman', Times, serif;
-    font-size: 20px;
-    color: white;
-
-    padding: 10px 20px;
-    width: 100%;
-
-    background-color: rgb(76, 95, 76);
-}
-
-footer {
-
-    display: flex;
-    justify-content: center;
-
-    font-family: monospace, 'Times New Roman', Times, serif;
-    font-size: 20px;
-    color: white;
-
-    padding: 30px 20px; 
-    width: 100%;
-
-    background-color: rgb(76, 95, 76);
-    
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(164, 172, 164);
 }
 
 
 
+body {
 
-/* FULL PAGE ALL CONTENT */
-.container {
-    display: flex;
-    flex-direction: row;
-
-    padding: 10px 10px 10px 10px; 
-    background-color: rgb(243, 236, 226);
-
-}
-
-
-.container > .navbar2 {
-    display: none;
-    background-color: red;
-}
-
-/* END OF PAGE */
-
-
-/* PHOTO */
-.container > .photo {
-
-    
-    width: 50vh;
-    height: auto;
-
-}
-/* END OF PHOTO */
-
-
-/* RIGHT SIDE */
-.container2 {
     display: flex;
     flex-direction: column;
-
-
-    padding: 0px 10px 0px 0px; 
-    width: 100%;
-    height: 100%;
-
-    text-wrap: wrap;
-
-
-    background-color: rgb(243, 236, 226);
-
-}
-
-.container2 > div {
-    
-    margin: 0px 0px 0px 0px;
-  
-}
-
-/* END OF RIGHT SIDE */
-
-
-
-/* NAVIGATION BAR */
-
-.container2 > .navbar {
-
-
-
-    font-family: monospace, 'Times New Roman', Times, serif;
-    font-size: 20px;
-
-    height: fit-content;
-    margin: 0px 0px 10px 20px;
-
-    
-    background-color: white;
-
-}
-
-.container2 > .navbar > ul {
-    
-    display: flex;
-    justify-content: center;
-
-    padding: 0px;
-    
-
-    list-style-type: none;
-    
-}
-
-.container2 > .navbar > ul > li {
-    
-    display: flex;
     justify-content: center;
     align-items: center;
-    
-    padding:10px;
-    margin: 0px 0px 0px 0px;
-    height: 12px;
-}
 
-.container2 > .navbar > ul > li > a {
-    
+    width: 100%;
+    height: 100em;
 
-    margin: 10px;
-    height: fit-content;
+    border-radius: 5em;
 
-}
-
-
-.container2 > .navbar > ul > li > a:link { 
-    color: black;
-}
-
-.container2 > .navbar > ul > li > a:visited { 
-    color: purple;
-}
-
-.container2 > .navbar > ul > li:hover {
-    
-    background-color: rgb(76, 95, 76);
-    font-size: 25px;
-    color: white;
-
-}
-
-.container2 > .navbar > ul > li > a:hover {
-
-    color: white;
-    
-
-}
-
-.container2 > .navbar > ul > li > a:active { 
-    color: blue;
+    /* background-color: rgb(245, 241, 241); */
 }
 
 
 
+.box-container {
 
-
-
-
-/* END OF NAVIGATION BAR */
-
-
-
-/* MAIN BODY CONTENT */
-
-
-.container2 {
     display: flex;
-    flex:1;
-    width: fit-content;
-    height: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex: 1;
+
+    margin: 0em;
+    width: 22em;
+    height: 10em;
+
+    border-top-left-radius: 4em;
+    border-top-right-radius: 4em;
+
+    background-color: lightcoral;
+    background-image: url("Professional-Ish-young.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
-.container2 > .main-content {
+.photo {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex: 1;
+
+    margin: 0em;
+    width: 22em;
+    height: 10em;
+
+    background-color: gainsboro;
+
+    background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, -1), rgba(0,0,0,6)),
+    url('images/background.jpg');
+
+    opacity: 0.3;
+}
+
+.box-container > h1 {
+
+    margin: 0;
 
 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2.5em;
+    font-weight: 200;
+    font-stretch: expanded;
+    color: darkgreen;
     
+}
 
-    font-family: monospace, 'Times New Roman', Times, serif;
-    font-size: 20px;
 
-    position: relative;
+
+.box-container2 {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex:2;
+
+
+    width: 95%;
+    height: 10px;
+    margin: 0px;
     padding: 10px;
-    margin: 20px 0px 20px 20px;
 
-    background-color: white;
+    border-bottom-left-radius: 4em;
+    border-bottom-right-radius: 4em;
+
+    background-color: gainsboro;
 }
 
 
-.container2 > .main-content > h2,h3,p {
-    
+
+
+.box1 {
+
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
-    font-family: monospace, 'Times New Roman', Times, serif;
-    font-size: 20px;
+    margin: auto;
+    width: auto;
+    height: auto;
+
+    background-color: gainsboro;
+
+    font-family: monospace;
+    
+    font-size: 50px;
+    font-weight: 200;
+
     text-wrap: wrap;
-
-
-    width: 700px;
-    height: 100px;
+    text-align: center;
     
-    margin: 10px;
 
-    background-color: rgb(243, 236, 226);
+    font-stretch: expanded;
+    color: darkgreen;
 }
 
-/* END OF MAIN BODY CONTENT */
+.box2 {
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    margin: auto;
+    width: auto;
+    height: auto;
 
+    background-color: gainsboro;
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* Mobile Responsive */
-
-@media screen and (max-width: 1210px) {
-
-    html,body {
-        display: flex;
-        flex-direction: column;
-        
-        align-items: center;
-
-        padding: 30px 0px 0px 0px;
-        margin: auto;
-        width: auto;
-        min-height: 100vh;
-
-
-         background-color: rgb(76, 95, 76);
-    }
-
-    header {
-
-        font-family: monospace, 'Times New Roman', Times, serif;
-        font-size: 20px;
-        color: white;
-    
-        position: absolute;
-        top:0;
-        width: 100%;
-    
-        background-color: rgb(76, 95, 76);
-    }
-    
-    footer {
-    
-
-    
-        font-family: monospace, 'Times New Roman', Times, serif;
-        font-size: 20px;
-        color: white;
-    
-
-        width: 100%;
-    
-        background-color: rgb(76, 95, 76);
-        
-    }
-
-
-    .container {
-        display: inline;
-        padding: 10px 0px 0px 15px; 
-        background-color: rgb(243, 236, 226);
-    
-    }
-
-    /* PHOTO */
-    .container > .photo {
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        object-fit: cover;
-
-
-        height: 500px;
-        width: 400px;
-        padding: 0px;
-        margin: 20px 0px 0px 150px;
-
-
-    }
-    /* END OF PHOTO */
-
-
-
-    .container > .navbar2 {
-
-
-        display: flex;
-        justify-content: center;
-
-        font-family: monospace, 'Times New Roman', Times, serif;
-        font-size: 20px;
-    
-        height: auto;
-        margin: 0px 15px 0px 0px;
-
-        background-color: white;
-    
-    }
-    
-    .container > .navbar2 > ul {
-        
-        display: flex;
-        justify-content: center;
-    
-        padding: 0px;
-        
-    
-        list-style-type: none;
-        
-    }
-    
-    .container > .navbar2 > ul > li {
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        padding:10px;
-        margin: 0px 0px 0px 30px;
-        height: 12px;
-    }
-    
-    .container > .navbar2 > ul > li > a {
-        
-    
-        margin: 10px;
-        height: auto;
-    
-    }
-    
-    
-    .container > .navbar2 > ul > li > a:link { 
-        color: black;
-    }
-    
-    .container > .navbar2 > ul > li > a:visited { 
-        color: purple;
-    }
-    
-    .container > .navbar2 > ul > li:hover {
-        
-        background-color: rgb(76, 95, 76);
-        font-size: 25px;
-        color: white;
-    
-    }
-    
-    .container > .navbar2 > ul > li > a:hover {
-    
-        color: white;
-        
-    
-    }
-    
-    .container > .navbar2 > ul > li > a:active { 
-        color: blue;
-    }
-    
-    .container2 > .navbar {
-        display: none;
-        background-color: red;
-    }
-
-
-    .container2 {
-        display: flex;
-        flex:1;
-        width: fit-content;
-        height: fit-content;
-    }
-
-.container2 > .main-content {
-
-    font-family: monospace, 'Times New Roman', Times, serif;
+    font-family: monospace;
     font-size: 20px;
+    font-weight: 200;
 
-    height: 100%;
-    width: 100%;
-    padding: 0px;
-    margin: 20px 0px 20px 0px;
+    text-wrap: wrap;
+    text-align: center;
 
-    background-color: white;
+    font-stretch: expanded;
+    color: darkgreen;
 }
 
+.box3 {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    margin: auto;
+    width: auto;
+    height: auto;
+
+    background-color: gainsboro;
+
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 200;
+
+    text-wrap: wrap;
+    text-align: center;
+
+    font-stretch: expanded;
+    color: darkgreen;
 }
 
-/* End of Mobile Responsive */
+
+
+
+
