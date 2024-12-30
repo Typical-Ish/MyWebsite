@@ -1,4 +1,4 @@
-
+/* PAGE LAYOUT MOBILE */
 html{
 
     display: flex;
@@ -26,7 +26,9 @@ body {
     /* background-color: rgb(245, 241, 241); */
 }
 
+/* PAGE LAYOUT MOBILE */
 
+/* PHOTO CONTAINER TOP BOX */
 
 .box-container {
 
@@ -52,6 +54,10 @@ body {
 
 }
 
+/* PHOTO CONTAINER TOP BOX */
+
+/* PHOTO AND TOP HALF GRADIENT */
+
 .photo {
 
     display: flex;
@@ -74,6 +80,11 @@ body {
     opacity: 0.3;
 }
 
+/* PHOTO AND TOP HALF GRADIENT */
+
+
+/* TITLE CARD TEXT AND GRADIENT */
+
 .box-container > h1 {
 
     position: absolute; /* Positioning relative to the .gradient-container */
@@ -95,7 +106,10 @@ body {
     
 }
 
+/* TITLE CARD TEXT AND GRADIENT */
 
+
+/* CONTENT BOXES 1,2,3*/
 
 .box-container2 {
 
@@ -229,7 +243,11 @@ body {
     margin: 10px;
 }
 
+/* CONTENT BOXES 1,2,3*/
 
+
+
+/* NAV BAR */
 
 .box-container3 {
 
@@ -341,6 +359,11 @@ body {
 
 }
 
+/* END NAV BAR */
+
+
+
+/* FOOTER */
 
 footer {
 
@@ -350,3 +373,5 @@ footer {
 
     color: white;
 }
+
+/* END FOOTER */
